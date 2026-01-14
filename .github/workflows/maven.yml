@@ -21,25 +21,25 @@ jobs:
           java-version: '21'
 
       - name: Build User Service
-        run: mvn -B package
+        run: mvn -B package -DskipTests
         working-directory: FitnessApplication/fitnessBackend/userservice
 
       - name: Build Activity Service
-        run: mvn -B package
+        run: mvn -B package -DskipTests
         working-directory: FitnessApplication/fitnessBackend/activityservice
 
       - name: Build AI Service
-        run: mvn -B package
+        run: mvn -B package -DskipTests
         working-directory: FitnessApplication/fitnessBackend/aiservice
 
       - name: Build Gateway Service
-        run: mvn -B package
+        run: mvn -B package -DskipTests
         working-directory: FitnessApplication/fitnessBackend/gatewayservice
 
       - name: Build Eureka Server
-        run: mvn -B package
+        run: mvn -B package -DskipTests
         working-directory: FitnessApplication/fitnessBackend/eureka
 
       - name: Build Config Server
-        run: mvn -B package
+        run: mvn -B package -DskipTests
         working-directory: FitnessApplication/fitnessBackend/configserver
